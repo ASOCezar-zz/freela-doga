@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Wrapper } from './styles';
 
-export const FilterWrapper = ({ children }) => {
+const FilterWrapper = ({ children }) => {
   return (
     <Wrapper>
       {children}
@@ -12,3 +12,5 @@ export const FilterWrapper = ({ children }) => {
 FilterWrapper.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+export default FilterWrapper;

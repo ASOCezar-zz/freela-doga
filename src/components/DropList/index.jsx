@@ -4,7 +4,7 @@ import { DefaultOption, Options, Select } from './styles';
 import PropTypes from 'prop-types';
 import { Option } from '../Option';
 
-export const DropList = ({ handleChange, options }) => {
+const DropList = ({ handleChange, options }) => {
   const [visible, setVisible] = useState(false);
 
   const renderOptions = (option) => <Option option={option} key={option.name} handleChange={handleChange}/>
@@ -23,3 +23,5 @@ DropList.propTypes = {
   handleChange: PropTypes.func.isRequired,
   options: PropTypes.array
 }
+
+export default DropList;

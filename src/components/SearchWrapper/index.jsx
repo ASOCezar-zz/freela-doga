@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import searchIcon from '../../assets/search.svg'
 import { useRef } from 'react';
 
-export const SearchWrapper = ({ onChange }) => {
+const SearchWrapper = ({ onChange }) => {
   const searchInput = useRef(null);
 
   const focusInput = () => {
@@ -22,3 +22,5 @@ export const SearchWrapper = ({ onChange }) => {
 SearchWrapper.propTypes = {
   onChange: PropTypes.func.isRequired,
 };
+
+export default SearchWrapper;

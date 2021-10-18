@@ -13,7 +13,7 @@ export const SearchWrapper = ({ onChange }) => {
 
   return(
     <Wrapper>
-      <Input type="text" id="search-input" ref={searchInput} onChange={(e) => onChange(e)}/>
+      <Input type="text" id="search-input" ref={searchInput} onChange={onChange}/>
       <Icon src={searchIcon} alt="Search Icon" onClick={focusInput}/>
     </Wrapper>
   )

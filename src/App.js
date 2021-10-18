@@ -36,18 +36,17 @@ function App() {
 
 
   return (
-  <div className="App">
-    <Navbar handleChange={handleChange} options={options}>
-      <FilterWrapper>
-        <img src={filterIcon} alt="Filter Icon" width="30px" height="30px"/>
-        <DropList handleChange={handleChange} options={options}/>
-        <DropList handleChange={handleChange} options={options}/>
-        <DropList handleChange={handleChange} options={options}/>
-      </FilterWrapper>
-      <SearchWrapper onChange={handleSearch}/>
-    </Navbar>
-      
-  </div>
+    <div className="App">
+      <Navbar handleChange={handleChange} options={options}>
+        <FilterWrapper>
+          <img src={filterIcon} alt="Filter Icon" width="30px" height="30px"/>
+          <DropList handleChange={handleChange} options={options}/>
+          <DropList handleChange={handleChange} options={options}/>
+          <DropList handleChange={handleChange} options={options}/>
+        </FilterWrapper>
+        <SearchWrapper onChange={handleSearch}/>
+      </Navbar>
+    </div>
   );
 }
 
